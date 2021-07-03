@@ -83,10 +83,6 @@ double get_sensor_val()
     __delay_ms(1000);
     start_i2c();
     __delay_us(8);
-    /*i2c_write_byte(0x90);
-    i2c_write_byte(0xEE);
-    //i2c_stop();
-    i2c_repeated_start();*/
     
     i2c_write_byte(0x90);
     i2c_write_byte(0x22);
@@ -99,9 +95,9 @@ double get_sensor_val()
     start_i2c();
     i2c_write_byte(0x90);
     i2c_write_byte(0xAA);
-   // i2c_stop();
+  
     i2c_repeated_start();
-    //start_i2c();
+ 
     i2c_write_byte(0x91);
     r_data_msb = i2c_read_byte();
     send_master_ack();
@@ -121,14 +117,13 @@ double get_sensor_val()
 
 void main(void) {
         
-    
     double m_data;
     char   buf[80];
-	TRISCbits.RC6=0;		// portC6 to be use as UART TX
-	TRISCbits.RC7=1;		// portC7 to be use as UART RX
-	SPBRG=31;		// Baud Rate Generator Register : to set 9600
-	TXSTA=0x20;		// TRANSMIT STATUS AND CONTROL REGISTER = > BRGH: High Baud Rate Select bit = High Speed	and	TXEN:Transmit Enable bit  	
-	RCSTA=0x90;		// RECEIVE STATUS AND CONTROL REGISTER => Ninth bit of Received Data + Address Detect Enable bit
+    TRISCbits.RC6=0;		// portC6 to be use as UART TX
+    TRISCbits.RC7=1;		// portC7 to be use as UART RX
+    SPBRG=31;		// Baud Rate Generator Register : to set 9600
+    TXSTA=0x20;		// TRANSMIT STATUS AND CONTROL REGISTER = > BRGH: High Baud Rate Select bit = High Speed	and	TXEN:Transmit Enable bit  	
+    RCSTA=0x90;		// RECEIVE STATUS AND CONTROL REGISTER => Ninth bit of Received Data + Address Detect Enable bit
     
     send_string("********************** AYENGEC *********************\r\n");
     send_string("READ TEMPERATURE FROM DS1621 AND SEND TO PC VIA UART\r\n");
