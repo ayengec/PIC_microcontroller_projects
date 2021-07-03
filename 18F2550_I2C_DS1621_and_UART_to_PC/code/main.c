@@ -1,7 +1,8 @@
 
-// PIC18F2550 Configuration Bit Settings
+// ayengec 
+// PIC I2C DS1621 Temperature Sensor Read Data and Send via UART to PC
 
-// 'C' source line config statements
+// main.c
 
 // CONFIG1L
 #pragma config PLLDIV = 1       // PLL Prescaler Selection bits (No prescale (4 MHz oscillator input drives PLL directly))
