@@ -77,7 +77,6 @@ double get_sensor_val()
 {
     unsigned char r_data_msb;
     unsigned char r_data_lsb;
-    int temp =0;
     
     initialize_i2c();
     __delay_ms(1000);
