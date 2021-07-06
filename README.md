@@ -1,9 +1,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://upload.wikimedia.org/wikipedia/commons/c/ca/Microchip-Logo.svg" alt="Logo" width="200" height="160">
+  <a href="https://github.com/ayengec/PIC_microcontroller_projects">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Microchip-Logo.svg" alt="Logo" width="200" height="160">
   </a>
-
+  
   <h3 align="center">Peripheral Interface Controller (PIC) Microcontroller</h3>
 
   <p align="center">
@@ -29,5 +30,5 @@ This section should list any major frameworks that you built your project using.
 ### To clone project
 Clone the repo
    ```sh
-   git clone https://github.com/ayengec/FPGA-Design-with-Systemverilog
+   git clone https://github.com/ayengec/PIC_microcontroller_projects
    ```
