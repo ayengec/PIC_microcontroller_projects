@@ -22,7 +22,6 @@ PIC Microcontroller architecture is based on Harvard architecture and supports R
 PIC microcontroller architecture consists of memory organization (ram, rom, stack), CPU, timers, counter, ADC, DAC, serial communication, CCP module and I/O ports.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [MPLAB X IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
 * [XC8 Compiler](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers)
 * [Proteus](https://www.labcenter.com/)
